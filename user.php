@@ -42,10 +42,10 @@ class User {
 	}
 
 	function returnData() {
-		echo "<br>" . $this->hostname . "<br>";
-		echo $this->username . "<br>";
-		echo $this->password . "<br>";
-		echo $this->dbname . "<br>";
+		echo "<br>Host: " . $this->hostname . "<br>";
+		echo "Username: " . $this->username . "<br>";
+		echo "Password:" . $this->password . "<br>";
+		echo "Database: " . $this->dbname . "<br>";
 	}
 
 	function display() {
