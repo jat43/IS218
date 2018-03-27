@@ -1,0 +1,56 @@
+body {
+	background-color: gray;
+	text-align: center;
+	margin: 0 auto;
+}
+
+body h2 {
+	color: white;
+}
+
+div.span3 {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.span3 label {
+	text-align: left;
+}
+
+.span3 form {
+	max-width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 20px;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.span3 form input {
+	width: 100%;
+}
+
+.span3 form input[type="text"],
+.span3 form input[type="password"],
+.span3 form input[type="email"],
+.span3 form input[type="number"],
+.span3 form input[type="date"] {
+	padding: 4px 0;
+}
+
+.span3 form span {
+	float:	left;
+	margin-left: 4px;
+}
+.span3 form input[type="radio"],
+.span3 form input[type="checkbox"] {
+	float: left;
+	width: auto;
+}
+
+.span3 form input[type="submit"] {
+	float: left;
+	margin: 5px 0;
+}
