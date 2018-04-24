@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include '../view/header.php'; ?>
 <style type="text/css">
 	<?php include '../main.css'; ?>	
@@ -13,7 +14,7 @@
         <input type="text" name="duedate" value="<?php echo $duedate; ?>" required> <br>
         <label>Message</label> <br>
         <input type="textarea" name="message" value="<?php echo $message; ?>" required> <br>
-        <input type="submit" value="Submit Edit"> <br>
+        <input type="submit" value="Submit Edit" class="btn btn-primary pull-right"> <br>
     </form>
 	  	<p><a href="index.php?action=add_item">See To-Do List</a></p>
 	</div>

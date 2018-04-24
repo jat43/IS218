@@ -4,7 +4,7 @@ html {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 850px;
+    width: 760px;
     margin: 0 auto;
     padding: 0 2em;
     background-color: white;
@@ -28,11 +28,19 @@ main form {
     margin: auto;
 }
 
+form input[type='submit'] {
+    width: 100%;
+}
+
 form label,
 form input,
 form span {
     float: left;
     margin: auto;
+}
+
+form span {
+    margin-left: 4px;
 }
 
 .clickme {
@@ -51,9 +59,11 @@ section {
 }
 footer {
     background-color: #5D5C61;
+    width: 100%;
     height: 30px;
     clear: both;
     color: white;
+    padding: 0;
 }
 footer p {
     text-align: right;
@@ -93,9 +103,24 @@ br {
 table {
     text-align: center;
     margin: auto;
-    border: 1px solid black;
     border-collapse: collapse;
     margin-bottom: 1em;
+}
+
+main table tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+main table tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+main table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+main table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
 }
 
 table tr:first-child th {
@@ -111,8 +136,7 @@ table tr:nth-child(odd) {
 }
 
 td, th {
-    border: 1px dashed black;
-    padding: .2em .5em .2em .5em;
+    padding: .25em .5em .25em .5em;
     text-align: left;
 }
 form {

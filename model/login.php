@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 function check_user($email) {
 	global $db;
 	$query = 'SELECT * FROM accounts
@@ -21,10 +21,13 @@ function enter_user($email, $password) {
     $statement->bindValue(":email", $email);
     $statement->bindValue(":password", $password);
     $statement->execute();
+    $results = $statement->fetchAll();
     $count = $statement->rowCount();
     $statement->closeCursor();
 
-	if($count == 1){  
+	if($count == 1){
+		$_SESSION["fname"] = $results[0]['fname'];
+    	$_SESSION["lname"] = $results[0]['lname'];  
 		header("location: ../item_list");
 	} else {
 		if (check_user($email) > 0)

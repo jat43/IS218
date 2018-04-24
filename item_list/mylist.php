@@ -1,15 +1,15 @@
+<?php session_start(); ?>
 <?php include '../view/header.php'; ?>
 <style type="text/css">
     <?php include '../main.css'; ?> 
 </style>
 <main>
     <!-- display a table of products -->
-    <h1>Hello,<?php echo $fname." ".$lname; ?></h1>
+    <h1>Hello,<?php echo " ".$fname." ".$lname; ?></h1>
     <h2>To-Do List</h2>
     <table>
         <tr>
-            <th>Message
-                <?php echo $_SESSION["fname"]; ?></th>
+            <th>Message</th>
             <th>Date Due</th>
             <th>&nbsp;</th>
             <th>&nbsp;</th>
@@ -26,7 +26,7 @@
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
                     <input type="hidden" name="duedate" value="<?php echo $list['duedate'] ?>">
                      <input type="hidden" name="message" value="<?php echo $list['message'] ?>">
-                    <input type="submit" value="Edit">
+                    <input type="submit" value="Edit" class="btn btn-warning">
                 </form>
             </td>
             <td>
@@ -34,7 +34,7 @@
                     <input type="hidden" name="action" value="delete">
                     <input type="hidden" name="email" value="<?php echo $list['owneremail'] ?>">
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
-                    <input type="submit" value="Delete">
+                    <input type="submit" value="Delete" class="btn btn-danger">
                 </form>
             </td>
             <td>
@@ -42,7 +42,7 @@
                     <input type="hidden" name="action" value="done">
                     <input type="hidden" name="email" value="<?php echo $list['owneremail'] ?>">
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
-                    <input type="submit" value="Complete">
+                    <input type="submit" value="Complete" class="btn btn-success">
                 </form>
             </td>
         </tr>
@@ -70,7 +70,7 @@
                     <input type="hidden" name="email" value="<?php echo $list['owneremail'] ?>">
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
                     <input type="hidden" name="duedate" value="<?php echo $list['duedate'] ?>">
-                    <input type="submit" value="Edit">
+                    <input type="submit" value="Edit" class="btn btn-warning">
                 </form>
             </td>
             <td>
@@ -78,7 +78,7 @@
                     <input type="hidden" name="action" value="delete">
                     <input type="hidden" name="email" value="<?php echo $list['owneremail'] ?>">
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
-                    <input type="submit" value="Delete">
+                    <input type="submit" value="Delete" class="btn btn-danger">
                 </form>
             </td>
             <td>
@@ -86,7 +86,7 @@
                     <input type="hidden" name="action" value="done">
                     <input type="hidden" name="email" value="<?php echo $list['owneremail'] ?>">
                     <input type="hidden" name="creatD" value="<?php echo $list['createddate'] ?>">
-                    <input type="submit" value="Complete">
+                    <input type="submit" value="Complete" class="btn btn-success">
                 </form>
             </td>
         </tr>

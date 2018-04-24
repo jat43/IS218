@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include '../view/header.php'; ?>
 <style type="text/css">
 	<?php include '../main.css'; ?>	
@@ -10,8 +11,8 @@
 		    <input type="email" name="email" placeholder="email@email.com" required> <br>
 		    <label>Password</label> <br>
 		    <input type="password" name="password" required> <br>
-		  	<input type="submit" value="Submit" class="btn btn-primary pull-right"> <br>
+		  	<input style="margin-top: 5px;" type="submit" value="Submit" class="btn btn-primary pull-right"> <br> 
 	    </form>
-	    <p><a href="index.php?action=register">Register</a></p>
+	    <p style="text-align: left;"><a href="index.php?action=register">Register</a></p>
 </main>
 <?php include '../view/footer.php'; ?>

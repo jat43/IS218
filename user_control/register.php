@@ -24,6 +24,6 @@
 			<input type="radio" name="gender" value="other"><span>Other</span><br>
 		    <input type="submit" value="Submit" class="btn btn-primary pull-right"> <br>
     </form>
-  	<p><a href="index.php?action=signin">Sign In</a></p>
+  	<p style="text-align: left;"><a href="index.php?action=signin">Sign In</a></p>
 </main>
 <?php include '../view/footer.php'; ?>
