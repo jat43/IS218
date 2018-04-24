@@ -7,11 +7,11 @@
 		<form action="." method="post">
         <input type="hidden" name="action" value="add_item">
         <input type="hidden" name="email" value="<?php echo $_SESSION["email"]; ?>">
-        <label>Due Date</label>
-        <input type="date" name="duedate" required>
-        <label>Message</label>
-        <input type="textbox" name="message" required>
-        <input type="submit" value="Add">
+        <label>Due Date</label> <br>
+        <input type="date" name="duedate" required> <br>
+        <label>Message</label> <br>
+        <input type="text" name="message" required> <br>
+        <input type="submit" value="Add"> <br>
     </form>
 	  	<p><a href="index.php?action=add_item">See To-Do List</a></p>
 	</div>

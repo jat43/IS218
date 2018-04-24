@@ -1,10 +1,10 @@
 <?php include 'view/header.php'; ?>
 <main>
 
-	<h1>Login or Register to use your To-Do List</h1>
+	<h1>Proceed to Login or Register</h1>
 
-    	<button>
-    		<a href="user_control">Login</a>
+    	<button class="clickme">
+    		<a href="user_control">Click Me</a>
     	</button>
 
 </main>

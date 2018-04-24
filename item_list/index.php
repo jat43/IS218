@@ -62,4 +62,3 @@ if ($action == 'show_lists') {
 }
 
 ?>
-<p><a href="../model/logout.php">Log Out</a></p>
